@@ -11,15 +11,15 @@ function carregar() {
 
     msg.innerHTML = `Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos..`
     if (hora >= 0 && hora < 12) {   
-       img.src = '/imagens/manha.jpg'
+       img.src = './imagens/manha.jpg'
        document.getElementById("corpo").style.background =  "url('./imagens/manha.jpg')"
     }   else if(hora >= 12 && hora < 18) {
         //BOA TARDE
         document.getElementById("corpo").style.background =  "url('./imagens/tarde.jpg')"
-        img.src = '/imagens/tarde.jpg'
+        img.src = './imagens/tarde.jpg'
     }   else{
         //BOA NOITE
-        img.src = '/imagens/noite.jpg'  
+        img.src = './imagens/noite.jpg'  
         document.getElementById("corpo").style.background =  "url('./imagens/noite.jpg')"  
     }
 
